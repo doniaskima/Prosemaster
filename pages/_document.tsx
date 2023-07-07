@@ -2,10 +2,10 @@ import Document, { Head, Html, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   render() {
-    let description = "Summarize articles in seconds.";
-    let ogimage = "https://news-summarizer.vercel.app/og-image.png";
-    let sitename = "news-summarizer.vercel.app";
-    let title = "News Summarizer";
+    let description = "Summarize articles in seconds. write article in seconds , check errors and paraphrase";
+    let ogimage = "";
+    let sitename = "Prosemaster.vercel.app";
+    let title = "Prosemaster";
 
     return (
       <Html lang="en">
