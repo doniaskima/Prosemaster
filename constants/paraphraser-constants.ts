@@ -1,3 +1,5 @@
+type ParaphrasingModeType = 'standard' | 'fluent' | 'formal' | 'simple' | 'creative' | 'expanded' | 'shorten';
+
 export const paraphrasingModeOptions: {
   value: ParaphrasingModeType;
   label: string;
