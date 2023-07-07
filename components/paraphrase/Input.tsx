@@ -47,7 +47,7 @@ const ParaphraseInput = () => {
         <select
           onChange={e => setParaMode(e.target.value as ParaphrasingModeType)}
           name="modes"
-          className="bg-transparent"
+          className="bg-transparent text-black"  
         >
           {paraphrasingModeOptions.map(item => (
             <option key={item.value} value={item.value}>
