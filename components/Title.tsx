@@ -2,7 +2,13 @@
 import React, { useState } from "react";
 import { RoughNotation } from "react-rough-notation";
 
-const Title = ({title ,paragraph}) => {
+
+interface TitleProps {
+  title: string;
+  paragraph: string;
+}
+
+const Title = ({ title, paragraph }: TitleProps) => {
     const [hover, setHover] = useState(false);
     
     const handleMouseEnter = () => {
