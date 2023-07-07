@@ -45,7 +45,7 @@ const ParaphraseInput = () => {
       <div className="flex items-center gap-3 py-2 px-4">
         <span>Choose style:</span>
         <select
-          onChange={e => setParaMode(e.target.value as ParaphrasingModeType)}
+          onChange={e => setParaMode(e.target.value)}
           name="modes"
           className="bg-transparent"
         >
