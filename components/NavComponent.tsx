@@ -4,8 +4,6 @@ import Link from "next/link";
 
 export default function NavComponent() {
   const ref = useRef<HTMLDivElement>(null);
-
-  // State for our modal
   const [isModalOpen, setModalOpen] = useState(false);
   useOnClickOutside(ref, () => setModalOpen(false));
 

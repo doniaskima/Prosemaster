@@ -53,7 +53,6 @@ const GrammarInput = () => {
       editText(errorArr);
       setErrors(data.response.words);
     } catch (err) {
-      console.log(err);
       setErrors([]);
     }
 
@@ -73,7 +72,6 @@ const GrammarInput = () => {
       setOutputText(data.response);
     } catch (err) {
       setOutputText('Oops, an error occurred. Please try again later.');
-      console.log(err);
     }
 
     setIsLoading(false);

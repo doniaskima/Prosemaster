@@ -9,7 +9,7 @@ const GrammarOutput = () => {
   const { outputText } = useContext(GrammarContext);
 
   const outputRef = useRef<HTMLDivElement>(null);
-  console.log(outputText);
+
 
   return (
     <div className="mb-12 rounded-2xl bg-white text-black text-sm mt-8 mx-auto shadow p-4" style={{ width: '80%' }}>
