@@ -12,12 +12,15 @@ Prosemaster is an AI-driven platform that helps you perfect your grammar, rephra
 ![Hero](screenshots/sc1.png)
 
 ![GrammarCheker](screenshots/sc2.png)
+
 ![GrammarCheker](screenshots/scr3.png)
 
 ![Paraphrase](screenshots/sc6.png)
+
 ![Paraphrase](screenshots/sc-paraphrase.png)
 
 ![Summerize](screenshots/summerize-sc.png)
+
 ![Summerize](screenshots/summerize-sc8.png)
 
 ![Article](screenshots/Docker-article%20.png)
@@ -42,14 +45,12 @@ Follow these steps to set up the Prosemaster project locally:
 ## Contributing
 
 Contributions to Prosemaster are welcome! If you'd like to contribute, please follow these guidelines:
+
 - Fork the repository and create a new branch.
 - Make your changes and ensure that the project builds successfully.
 - Write appropriate tests for your changes if applicable.
 - Open a pull request, describing the changes you've made.
 
- 
-
 ## Contact
 
-If you have any questions, suggestions, or feedback, please feel free to reach out to our team at [email@example.com]. We'd be happy to assist you!
-
+If you have any questions, suggestions, or feedback, please feel free to reach out to our team at [doniaskima344@gmail.com]. We'd be happy to assist you!
