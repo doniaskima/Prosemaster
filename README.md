@@ -13,11 +13,11 @@ Prosemaster is an AI-driven platform that helps you perfect your grammar, rephra
 
 | Hero | Grammar Checker | Sentence Rephrasing |
 |------|-----------------|---------------------|
-| ![Hero](screenshots/sc1.png) | ![Grammar Checker](screenshots/sc2.png) | ![Sentence Rephrasing](screenshots/scr3.png) |
+| ![Hero](screenshots/sc1.png) | ![Grammar Checker](screenshots/sc2.png) | ![Sentence Rephrasing](screenshots/sc-paraphrase.png) |
 
 | Text Summarization | Article Generation |
 |--------------------|--------------------|
-| ![Text Summarization](screenshots/summerize-sc.png) | ![Article Generation](screenshots/Docker-article.png) |
+| ![Text Summarization](screenshots/summerize-sc.png) | ![Article Generation](screenshots/Docker-article%20.png)
 
 ## Technologies Used
 
