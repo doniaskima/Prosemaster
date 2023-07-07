@@ -9,6 +9,9 @@ Prosemaster is an AI-driven platform that helps you perfect your grammar, rephra
 - Text summarization: Prosemaster summarizes lengthy texts, saving you time and effort by providing concise and coherent summaries that capture the main ideas.
 - Captivating article generation: Generate engaging articles using Prosemaster's AI-powered writing assistance. It helps you craft compelling content by offering creative suggestions, enhancing your writing style, and ensuring coherence.
 
+![Hero](screenshots/hero.png)
+![Hero](screenshots/sc1.png)
+
 ## Technologies Used
 
 - Next.js: A powerful React framework for building server-side rendered and statically generated web applications.
