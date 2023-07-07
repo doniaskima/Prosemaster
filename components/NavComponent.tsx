@@ -9,18 +9,12 @@ export default function NavComponent() {
   const [isModalOpen, setModalOpen] = useState(false);
   useOnClickOutside(ref, () => setModalOpen(false));
 
-  const isMobile = window.innerWidth <= 768; // Check if the viewport width is less than or equal to 768px
-
   return (
     <div className="sticky top-0 z-10 navv text-xl font-bold drop-shadow-xl flex-none transition-colors duration-500">
       <style jsx>{`
         .navv {
           background: rgba(255, 255, 255, 0.01);
           backdrop-filter: blur(15px);
-        }
-
-        .github-button {
-          border: none;
         }
       `}</style>
 
@@ -65,19 +59,17 @@ export default function NavComponent() {
                           </button>
                         </div>
                       </div>
-                      {isMobile && (
-                        <div className="py-6 px-5">
-                          <a
-                            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-blue-600 text-white px-5 py-2 text-sm shadow-md hover:bg-blue-500 bg-blue-600 font-medium transition github-button"
-                            href="https://github.com/doniaskima"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <Github />
-                            <p>Star on GitHub</p>
-                          </a>
-                        </div>
-                      )}
+                      <div className="py-6 px-5">
+                        <a
+                          className="flex max-w-fit items-center justify-center space-x-2 rounded-full border   text-white px-5 py-2 text-sm shadow-md hover:bg-blue-500 bg-blue-600 font-medium transition"
+                          href="https://github.com/doniaskima"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github />
+                          <p>Star on GitHub</p>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 ) : (
@@ -106,17 +98,15 @@ export default function NavComponent() {
               </>
             </div>
             <nav className="hidden sm:flex space-x-10 items-center">
-              {!isMobile && (
-                <a
-                  className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-blue-600 text-white px-5 py-2 text-sm shadow-md hover:bg-blue-500 bg-blue-600 font-medium transition github-button"
-                  href="https://github.com/doniaskima"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github />
-                  <p>Star on GitHub</p>
-                </a>
-              )}
+              <a
+                className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-blue-600 text-white px-5 py-2 text-sm shadow-md hover:bg-blue-500 bg-blue-600 font-medium transition"
+                href="https://github.com/doniaskima"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github />
+                <p>Star on GitHub</p>
+              </a>
             </nav>
           </div>
         </div>
@@ -124,7 +114,6 @@ export default function NavComponent() {
     </div>
   );
 }
-
 
 export function Github({ className }: { className?: string }) {
   return (
