@@ -1,6 +1,6 @@
-'use client';
+import React, { createContext, useState } from 'react';
 
-import { createContext, useState } from 'react';
+type ParaphrasingModeType = 'standard' | 'advanced';
 
 type ParaphraseCtx = {
   paraMode: ParaphrasingModeType;
