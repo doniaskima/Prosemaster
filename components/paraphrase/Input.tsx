@@ -1,10 +1,10 @@
-'use client';
-import { useState, useRef, useContext } from 'react';
+import React, { useState, useRef, useContext } from 'react';
 import { RxSymbol } from 'react-icons/rx';
 import { ParaphraseContext } from '../../context/paraphrase';
 import { usePreventRichText } from '../../helpers/usePreventRichText';
 import { paraphrasingModeOptions } from '../../constants/paraphraser-constants';
 
+type ParaphrasingModeType = 'standard' | 'advanced';
 
 const ParaphraseInput = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -34,7 +34,7 @@ const ParaphraseInput = () => {
 
       setParaphrased(data.response);
     } catch (err) {
-      setParaphrased('Oops, an error occured. Please try again later!');
+      setParaphrased('Oops, an error occurred. Please try again later!');
     }
 
     setIsLoading(false);
@@ -45,7 +45,7 @@ const ParaphraseInput = () => {
       <div className="flex items-center gap-3 py-2 px-4">
         <span>Choose style:</span>
         <select
-          onChange={e => setParaMode(e.target.value)}
+          onChange={e => setParaMode(e.target.value as ParaphrasingModeType)}
           name="modes"
           className="bg-transparent"
         >
