@@ -90,7 +90,7 @@ const GrammarInput = () => {
   };
 
   return (
-    <div className=" mb-12 rounded-2xl bg-white text-black text-sm mt-8 mx-auto shadow p-4" style={{ width: '80%' }}>
+    <div className="mb-12 rounded-2xl bg-white text-black text-sm mt-8 mx-auto shadow p-4" style={{ width: '80%' }}>
       <div
         ref={inputRef}
         className={`break-word custom-scroll ${
@@ -100,7 +100,7 @@ const GrammarInput = () => {
         onKeyUp={typingHandler}
         placeholder="Write something cool..."
       />
-      <div className="flex items-center gap-4 rounded-b-2xl bg-purple-500 py-2 px-4">
+      <div className="flex items-center gap-4 rounded-b-2xl bg-[#c198fc] py-2 px-4">
         <p>
           <span className="font-bold">{wordsCount}</span> <span>Words</span>
         </p>
@@ -125,7 +125,7 @@ const GrammarInput = () => {
           </p>
         )}
         <div className="ml-auto flex items-center gap-2">
-          <button onClick={fixErrors} className="bg-purple-700 hover:bg-purple-800 text-white py-1 px-3 rounded focus:outline-none">
+          <button onClick={fixErrors} className="button">
             Fix Me
           </button>
           {isLoading && <RxSymbol className="animate-spin" />}
