@@ -9,8 +9,19 @@ Prosemaster is an AI-driven platform that helps you perfect your grammar, rephra
 - Text summarization: Prosemaster summarizes lengthy texts, saving you time and effort by providing concise and coherent summaries that capture the main ideas.
 - Captivating article generation: Generate engaging articles using Prosemaster's AI-powered writing assistance. It helps you craft compelling content by offering creative suggestions, enhancing your writing style, and ensuring coherence.
 
-![Hero](screenshots/hero.png)
 ![Hero](screenshots/sc1.png)
+
+![GrammarCheker](screenshots/sc2.png)
+![GrammarCheker](screenshots/scr3.png)
+
+![Paraphrase](screenshots/sc6.png)
+![Paraphrase](screenshots/sc-paraphrase.png)
+
+![Summerize](screenshots/summerize-sc.png)
+![Summerize](screenshots/summerize-sc8.png)
+
+![Article](screenshots/Docker-article%20.png)
+ 
 
 ## Technologies Used
 
