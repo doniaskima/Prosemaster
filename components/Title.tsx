@@ -10,7 +10,7 @@ const Title = ({ title, paragraph }: TitleProps) => {
   return (
     <>
       <div className="flex justify-center align-items-center text-5xl font-bold cursor-pointer mt-8">
-        <div className="content mb-8 flex justify-center align-items-center">
+        <div className="content mb-8 flex justify-center align-items-center ">
           <h2 className="text-center">{title}</h2>
           <h2 className="text-center">{title}</h2>
         </div>
