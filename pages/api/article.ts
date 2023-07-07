@@ -19,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
    
-  const question = `Write an three paragraphs long article about "${prompt}"`;
+  const question = `Write an three paragraphs long article with Title Introduction and finally Conclusion about "${prompt}"`;
   const answer = (await query(question)) || 'Something went wrong...';
 
   const response = trimNewLines(answer);
