@@ -43,7 +43,7 @@ const ParaphraseInput = () => {
   return (
     <div className="mb-12 rounded-2xl bg-white text-sm mt-8 mx-auto shadow p-4" style={{ width: '80%' }}>
       <div className="flex items-center gap-3 py-2 px-4">
-        <span>Choose style:</span>
+        <span className="text-black">Choose style:</span>
         <select
           onChange={e => setParaMode(e.target.value as ParaphrasingModeType)}
           name="modes"
