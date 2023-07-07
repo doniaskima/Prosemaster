@@ -90,12 +90,12 @@ const GrammarInput = () => {
   };
 
   return (
-    <div className="mb-12 rounded-2xl bg-white text-black text-sm mt-8 mx-auto shadow p-4" style={{ width: '80%' }}>
+    <div className="mb-12 rounded-2xl text-black bg-white text-black text-sm mt-8 mx-auto shadow p-4" style={{ width: '80%' }}>
       <div
         ref={inputRef}
-        className={`break-word custom-scroll ${
+        className={`break-word custom-scroll text-black ${
           !inputText.length && 'placeholder'
-        } relative h-80 overflow-y-auto whitespace-pre-wrap px-4 pb-2 pt-4 focus:outline-none`}
+        } relative h-80 text black bold overflow-y-auto whitespace-pre-wrap px-4 pb-2 pt-4 focus:outline-none`}
         contentEditable={true}
         onKeyUp={typingHandler}
         placeholder="Write something cool..."

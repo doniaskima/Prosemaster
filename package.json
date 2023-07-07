@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@editorjs/editorjs": "^2.27.2",
     "@next/font": "^13.1.5",
     "@upstash/redis": "^1.20.0",
     "@vercel/analytics": "^0.1.8",
