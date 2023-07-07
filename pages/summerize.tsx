@@ -18,7 +18,7 @@ const page = () => {
         <Header
            name="Summarize"
          />
-         <Title paragraph="Our powerful technology, powered by OpenAI, ensures that your sentences are rewritten with precision, preserving the original meaning while presenting them in a fresh and engaging manner." title="Summarize with Ease" />
+         <Title paragraph="Precise, Engaging Sentence Rewriting" title="Summarize with Ease" />
          <Input/>
          <SummarizeOutput/>
         </SummarizeProvider>

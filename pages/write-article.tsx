@@ -18,7 +18,7 @@ const page = () => {
         <Header
            name="Write.Article"
          />
-          <Title paragraph="" title="Unleash the Power of Expressive Writing" />
+          <Title paragraph="Unleash the Power of Expressive Writing" title="Revolutionize Articles" />
          <ArticleInput/>
          <ArticleOutput/>
         </ArticleProvider>

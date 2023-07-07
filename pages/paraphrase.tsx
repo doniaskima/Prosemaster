@@ -19,7 +19,7 @@ const page = () => {
         <Header
            name="Paraphrase"
          /> 
-        <Title paragraph="Your seamless solution for effortlessly rewriting sentences " title="Your Ultimate Sentence Paraphrasing Tool" />
+        <Title paragraph="Your seamless solution for effortlessly rewriting sentences " title="Seamless Rewriting" />
     
           <ParaphraseInput/> 
           <ParaphraserOutput/>  

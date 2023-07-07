@@ -1,11 +1,9 @@
-"use client";
 import { useState, useRef, useMemo, useContext } from 'react';
 import axios from 'axios';
 import { GrammarContext } from '../../context/Grammar';
 import { usePreventRichText } from '../../helpers/usePreventRichText';
 import { putCursorAtTheEndOf } from '../../helpers/helper';
 import { RxSymbol } from 'react-icons/rx';
-
 
 const MIN_LENGTH = 5;
 
@@ -43,28 +41,20 @@ const GrammarInput = () => {
 
   const checkForErrors = async () => {
     if (inputText.trim().length < MIN_LENGTH) return;
-    console.log("isChecking",isChecking)
+
     setIsChecking(true);
-    console.log("isChecking",isChecking)
+
     try {
       const prompt = inputText;
-      console.log('checkForErrors', prompt);
-      console.log('trying')
-      const response = await axios.post('/api/grammar-errors', { prompt : prompt });
-      console.log("wtf")
-
+      const response = await axios.post('/api/grammar-errors', { prompt });
       const data = response.data;
-      console.log(data);
-
       const errorArr: string[] = data.response.words;
-      console.log(errorArr);
 
       editText(errorArr);
       setErrors(data.response.words);
     } catch (err) {
       console.log(err);
       setErrors([]);
-      
     }
 
     setIsChecking(false);
@@ -77,10 +67,8 @@ const GrammarInput = () => {
 
     try {
       const prompt = inputText;
-      console.log('Fix errors', prompt);
       const response = await axios.post('/api/correct-text', { prompt });
       const data = response.data;
-      console.log(data);
 
       setOutputText(data.response);
     } catch (err) {
@@ -102,25 +90,25 @@ const GrammarInput = () => {
   };
 
   return (
-    <div className="mb-12 rounded-2xl bg-white text-black text-sm mt-8 mx-auto shadow p-4" style={{ width: '80%' }}>
+    <div className=" mb-12 rounded-2xl bg-white text-black text-sm mt-8 mx-auto shadow p-4" style={{ width: '80%' }}>
       <div
         ref={inputRef}
         className={`break-word custom-scroll ${
           !inputText.length && 'placeholder'
-        } relative h-80 overflow-y-auto whitespace-pre-wrappx-4 pb-2 pt-4 focus:outline-none`}
+        } relative h-80 overflow-y-auto whitespace-pre-wrap px-4 pb-2 pt-4 focus:outline-none`}
         contentEditable={true}
         onKeyUp={typingHandler}
         placeholder="Write something cool..."
       />
-      <div className="flex items-center gap-4 rounded-b-2xl bg-[#c198fc] py-2 px-4">
+      <div className="flex items-center gap-4 rounded-b-2xl bg-purple-500 py-2 px-4">
         <p>
           <span className="font-bold">{wordsCount}</span> <span>Words</span>
         </p>
         {!isChecking && (
           <p
             className={`
-            ${errors.length && inputText.length > MIN_LENGTH && 'text-red-700'}
-          `}
+              ${errors.length && inputText.length > MIN_LENGTH && 'text-red-700'}
+            `}
           >
             <span className="font-bold">
               {inputText.length > MIN_LENGTH ? errors.length : 0}{' '}
@@ -137,7 +125,7 @@ const GrammarInput = () => {
           </p>
         )}
         <div className="ml-auto flex items-center gap-2">
-          <button onClick={fixErrors} className="button">
+          <button onClick={fixErrors} className="bg-purple-700 hover:bg-purple-800 text-white py-1 px-3 rounded focus:outline-none">
             Fix Me
           </button>
           {isLoading && <RxSymbol className="animate-spin" />}

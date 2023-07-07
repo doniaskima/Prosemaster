@@ -51,7 +51,7 @@ const ArticleInput = () => {
           ref={topicRef}
           type="text"
           className="w-3/4 rounded-3xl px-2 py-1 pl-5 text-sm focus:outline-none"
-          placeholder="RPG Video games"
+          placeholder="Docker and Containerization"
         />
         <button
           onClick={getArticle}

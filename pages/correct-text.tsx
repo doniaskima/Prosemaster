@@ -11,13 +11,8 @@ import Title from "../components/Title";
 const Page: React.FC = () => {
   return (
     <>
-    <div className="relative">
-        <div className="absolute -z-10 top-[-50rem] -left-[40rem]">
-          <img src="Group47.svg" className="relative top-[20rem]" alt="Background" />
-        </div>
-    </div>
     <GrammarProvider>
-      <div className="relative">
+      <div className="relative bg-white">
         <div className="absolute -z-10 top-[-50rem] -left-[40rem]">
           <img src="Group47.svg" className="relative top-[20rem]" alt="Background" />
         </div>
