@@ -18,7 +18,7 @@ export default function Header({ name }: { name: string }) {
         </h1>
       </Link>
       <a
-        href="https://github.com/doniaskima/ProseMaster"
+        href="https://github.com/doniaskima/Prosemaster"
         target="_blank"
         rel="noreferrer"
       >
